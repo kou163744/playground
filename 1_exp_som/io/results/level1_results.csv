@@ -1,0 +1,26 @@
+Level 1,absolute_position_1,absolute_position_2,relative_position_1,relative_position_2,yolo_answer1,yolo_answer2,yolo_answer3,yolo_answer4,som_answer1,som_answer2,som_answer3,som_answer4
+image1,The left-most object,The right-most fruit on the desk,The object at the left of the peach on the desk,The object at the right of the peach on the desk,2,3,2,4,9,14,9,12
+image2,The left-most object on the desk,The right-most fruit on the desk,The object at the left of the spam on the desk,The object at the right of the mustard on the desk,6,1,4,1,~,~,~,~
+image3,The left-most fruit on the desk,The right-most fruit on the desk,The object behind the apple on the desk,The object at the right of the pringles on the desk,2,4,5,6,~,~,9,10
+image4,The left-most fruit on the desk.,The right-most object on the desk.,The object behind the lemon on the desk,The object at the left of the lemon on the desk,3,6,5,2,~,~,15,12
+image5,The left-most object.,The right-most fruit.,The object behind the apple on the desk.,The object behind the strawberry on the desk.,5,1,8,5,~,~,9,~
+image6,The left-most ball.,The right-most fruit.,The food behind the mustard.,The object at the right of the banana.,1,5,9,3,15,11,9,8
+image7,The right-most ball.,The left-most ball.,The object behind the soccer ball.,The object at the right of the soft ball,2,1,6,6,12,16,10,10
+image8,The left-most fruit.,The left-most ball.,The object behind the pringles.,The object at the left of the lemon.,6,2,11,7,12,12,9,15
+image9,The right-most fruit.,The left-most fruit.,The ball behind the banana.,The object at the left of the pear.,4,2,1,2,~,8,5,8
+image10,The right-most kitchen tool.,The left-most object.,The object behind the rubics cube.,The object at the right of the spam.,8,9,6,8,6,7,8,6
+image11,The left-most object.,The left-most fruit.,The object behind the pringles.,The object at the left of the lemon.,11,9,5,9,13,17,9,17
+image12,The right-most fruit.,The right-most ball.,The object behind the pear.,The object behind the pringles.,7,1,10,4,14,6,10,7
+image13,The left-most ball.,The right-most ball.,The object at the right of the soft ball.,The object behind the mustard.,1,3,2,4,8,14,12,16
+image14,The left-most ball.,The right-most fruit.,The object behind the lemon.,The object behind the apple.,1,4,5,1,7,13,11,7
+image15,The center fruit.,The right-most fruit.,The object at the right of the pringles.,The object behind the left strawberry.,3,2,1,4,4,7,6,5
+image16,The right-most ball.,The right-most fruit.,The object at the right of the apple.,The object behind the mustard.,2,4,4,8,14,16,16,5
+image17,The left-most ball.,The right-most fruit.,The object at the right of the apple.,The object behind the apple.,1,4,4,7,8,10,10,6
+image18,The left-most fruit.,The right-most fruit.,The object at the right of the spam.,The object behind the left strawberry.,2,4,5,3,~,~,7,9
+image19,The left-most fruit.,The left-most kitchen tool.,The object at the right of the coffee can.,The object behind the rubics cube.,2,5,3,3,~,6,10,8
+image20,The right-most ball.,The right-most fruit.,The object at the right of the apple.,The object behind the peach.,3,1,3,3,9,14,9,9
+image21,The left-most fruit.,The right-most food.,The object at the left of the strawberry.,The object behind the pear.,2,11,5,7,15,13,12,14
+image22,The left-most ball.,The right-most fruit.,The object behind the strawberry.,The object behind the baseball.,4,5,3,2,10,^,8,6
+image23,The left-most fruit.,The left-most ball.,The object at the right of the left strawberry.,The object behind the right strawberry.,12,1,6,11,0,12,^,8
+image24,The left-most fruit.,The center fruit.,The object behind the right peach.,The object in front of the right pringles.,3,7,6,4,^,15,7,1
+image25,The left-most fruit.,The center fruit.,The object behind the strawberry.,The object behind the pear.,4,2,3,5,10,9,7,8
