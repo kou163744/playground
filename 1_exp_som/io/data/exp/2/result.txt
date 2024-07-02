@@ -1,0 +1,43 @@
+[id: 10
+name: "banana"
+score: 0.924144983291626
+x: 496
+y: 225
+w: 43
+h: 35, id: 4
+name: "spam"
+score: 0.9161110520362854
+x: 219
+y: 206
+w: 41
+h: 36, id: 0
+name: "cheeze it"
+score: 0.8933094143867493
+x: 366
+y: 179
+w: 35
+h: 103, id: 28
+name: "tennis ball"
+score: 0.852936863899231
+x: 294
+y: 216
+w: 26
+h: 26, id: 8
+name: "mustard"
+score: 0.7592233419418335
+x: 439
+y: 189
+w: 43
+h: 82, id: 12
+name: "apple"
+score: 0.5698527097702026
+x: 152
+y: 210
+w: 30
+h: 32, id: 34
+name: "cornflaces"
+score: 0.3665890693664551
+x: 219
+y: 204
+w: 42
+h: 40]

@@ -1,0 +1,61 @@
+[id: 12
+name: "apple"
+score: 0.9790347814559937
+x: 486
+y: 227
+w: 31
+h: 34, id: 5
+name: "coffee"
+score: 0.9569558501243591
+x: 198
+y: 174
+w: 42
+h: 63, id: 10
+name: "banana"
+score: 0.9130566120147705
+x: 249
+y: 209
+w: 58
+h: 30, id: 32
+name: "rubiks cube"
+score: 0.9111766219139099
+x: 279
+y: 238
+w: 32
+h: 36, id: 15
+name: "pear"
+score: 0.8577655553817749
+x: 133
+y: 210
+w: 35
+h: 25, id: 11
+name: "strawberry"
+score: 0.8233271837234497
+x: 162
+y: 234
+w: 21
+h: 18, id: 0
+name: "cheeze it"
+score: 0.6893061399459839
+x: 381
+y: 169
+w: 33
+h: 99, id: 5
+name: "coffee"
+score: 0.43590131402015686
+x: 470
+y: 162
+w: 58
+h: 101, id: 39
+name: "red wine"
+score: 0.43590131402015686
+x: 316
+y: 203
+w: 34
+h: 20, id: 32
+name: "rubiks cube"
+score: 0.4054486155509949
+x: 411
+y: 219
+w: 23
+h: 38]

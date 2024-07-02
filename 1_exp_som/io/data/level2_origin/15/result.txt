@@ -1,0 +1,73 @@
+[id: 25
+name: "soccer ball"
+score: 0.9830838441848755
+x: 263
+y: 415
+w: 56
+h: 60, id: 4
+name: "spam"
+score: 0.9637787342071533
+x: 320
+y: 307
+w: 44
+h: 40, id: 5
+name: "coffee"
+score: 0.9173051714897156
+x: 336
+y: 414
+w: 44
+h: 74, id: 12
+name: "apple"
+score: 0.8300422430038452
+x: 251
+y: 311
+w: 31
+h: 34, id: 32
+name: "rubiks cube"
+score: 0.7905300855636597
+x: 397
+y: 190
+w: 37
+h: 28, id: 0
+name: "cheeze it"
+score: 0.7620676159858704
+x: 387
+y: 281
+w: 36
+h: 105, id: 13
+name: "lemon"
+score: 0.6842647194862366
+x: 392
+y: 433
+w: 27
+h: 23, id: 8
+name: "mustard"
+score: 0.6740499138832092
+x: 335
+y: 156
+w: 41
+h: 91, id: 4
+name: "spam"
+score: 0.5292633771896362
+x: 336
+y: 414
+w: 45
+h: 74, id: 34
+name: "cornflaces"
+score: 0.46684539318084717
+x: 334
+y: 155
+w: 42
+h: 91, id: 7
+name: "pringles"
+score: 0.3276689648628235
+x: 387
+y: 282
+w: 35
+h: 105, id: 40
+name: "tropical juice"
+score: 0.31236934661865234
+x: 255
+y: 183
+w: 32
+h: 31]

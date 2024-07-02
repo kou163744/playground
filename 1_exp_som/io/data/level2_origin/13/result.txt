@@ -1,0 +1,37 @@
+[id: 15
+name: "pear"
+score: 0.9736440181732178
+x: 288
+y: 274
+w: 41
+h: 33, id: 14
+name: "peach"
+score: 0.9343974590301514
+x: 449
+y: 151
+w: 29
+h: 27, id: 12
+name: "apple"
+score: 0.6406351923942566
+x: 184
+y: 384
+w: 33
+h: 35, id: 7
+name: "pringles"
+score: 0.5078119039535522
+x: 284
+y: 221
+w: 32
+h: 96, id: 7
+name: "pringles"
+score: 0.457136869430542
+x: 184
+y: 323
+w: 31
+h: 93, id: 7
+name: "pringles"
+score: 0.3998115658760071
+x: 433
+y: 103
+w: 30
+h: 89]

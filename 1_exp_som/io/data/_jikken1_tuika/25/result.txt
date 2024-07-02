@@ -1,0 +1,37 @@
+[id: 11
+name: "strawberry"
+score: 0.8933094143867493
+x: 395
+y: 209
+w: 20
+h: 18, id: 0
+name: "cheeze it"
+score: 0.8354835510253906
+x: 383
+y: 143
+w: 35
+h: 106, id: 12
+name: "apple"
+score: 0.6477978229522705
+x: 327
+y: 195
+w: 34
+h: 36, id: 15
+name: "pear"
+score: 0.6279522776603699
+x: 251
+y: 207
+w: 31
+h: 32, id: 20
+name: "bowl"
+score: 0.4960938096046448
+x: 327
+y: 195
+w: 34
+h: 36, id: 8
+name: "mustard"
+score: 0.47852879762649536
+x: 268
+y: 151
+w: 40
+h: 88]

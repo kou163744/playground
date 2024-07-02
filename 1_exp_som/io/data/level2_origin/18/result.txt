@@ -1,0 +1,55 @@
+[id: 25
+name: "soccer ball"
+score: 0.9918746948242188
+x: 370
+y: 301
+w: 60
+h: 60, id: 14
+name: "peach"
+score: 0.9734424352645874
+x: 261
+y: 325
+w: 27
+h: 26, id: 14
+name: "peach"
+score: 0.9664098620414734
+x: 257
+y: 189
+w: 28
+h: 26, id: 32
+name: "rubiks cube"
+score: 0.920792818069458
+x: 400
+y: 444
+w: 30
+h: 36, id: 11
+name: "strawberry"
+score: 0.8438971638679504
+x: 331
+y: 446
+w: 20
+h: 21, id: 4
+name: "spam"
+score: 0.81640625
+x: 265
+y: 146
+w: 40
+h: 84, id: 4
+name: "spam"
+score: 0.7248698472976685
+x: 259
+y: 436
+w: 45
+h: 42, id: 7
+name: "pringles"
+score: 0.6893061399459839
+x: 270
+y: 276
+w: 34
+h: 100, id: 14
+name: "peach"
+score: 0.30735790729522705
+x: 380
+y: 185
+w: 34
+h: 33]

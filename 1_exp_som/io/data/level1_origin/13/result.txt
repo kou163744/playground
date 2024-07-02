@@ -1,0 +1,55 @@
+[id: 26
+name: "soft ball"
+score: 0.9892646074295044
+x: 335
+y: 368
+w: 53
+h: 54, id: 14
+name: "peach"
+score: 0.937213659286499
+x: 499
+y: 378
+w: 32
+h: 32, id: 27
+name: "base ball"
+score: 0.9039729833602905
+x: 466
+y: 137
+w: 29
+h: 29, id: 11
+name: "strawberry"
+score: 0.8856285810470581
+x: 191
+y: 250
+w: 22
+h: 20, id: 11
+name: "strawberry"
+score: 0.8714772462844849
+x: 491
+y: 245
+w: 20
+h: 18, id: 6
+name: "tuna"
+score: 0.8670357465744019
+x: 329
+y: 234
+w: 41
+h: 65, id: 4
+name: "spam"
+score: 0.7634811401367188
+x: 200
+y: 139
+w: 41
+h: 37, id: 8
+name: "mustard"
+score: 0.740175724029541
+x: 173
+y: 346
+w: 65
+h: 68, id: 9
+name: "tomato soup"
+score: 0.562176525592804
+x: 332
+y: 149
+w: 26
+h: 49]

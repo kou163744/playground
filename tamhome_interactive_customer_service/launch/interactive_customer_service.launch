@@ -1,0 +1,29 @@
+<launch>
+
+    <arg name="start_state" default="Start" />
+    <arg name="use_teleop" default="false" />
+    <arg name="debug" default="false" />
+    <arg name="use_rviz" default="false" />
+    <arg name="wait_to_ready" default="true" />
+
+    <arg name="is_sigverse" default="true"/>
+    <param name="/interactive_customer_service/wait_to_ready" value="$(arg wait_to_ready)" />
+
+    <node name="state_machine" pkg="interactive_customer_service" type="task_node.py" output="screen" respawn="true">
+        <param name="start_state" value="$(arg start_state)" />
+    </node>
+
+    <!-- タイムアップを監視するサーバ -->
+    <node pkg="interactive_customer_service" name="time_server" type="time_server.py" output="screen" respawn="true"/>
+
+    <group if="$(arg use_rviz)">
+        <node name="rviz" pkg="rviz" type="rviz" args="-d $(find interactive_customer_service)/io/main.rviz" />
+    </group>
+
+    <group if="$(arg use_teleop)">
+        <node name="teleop_key_ics_input" pkg="interactive_customer_service" type="teleop_key_ics_input" output="screen" launch-prefix="gnome-terminal -t 'Teleop Key Input' -e">
+            <param name="goods_list_path" value="$(find interactive_customer_service)/io/GoodsList.txt"/>
+        </node>
+    </group>
+
+</launch>

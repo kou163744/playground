@@ -1,0 +1,37 @@
+[id: 25
+name: "soccer ball"
+score: 0.9924228191375732
+x: 186
+y: 171
+w: 52
+h: 52, id: 26
+name: "soft ball"
+score: 0.9658982753753662
+x: 171
+y: 223
+w: 42
+h: 43, id: 13
+name: "lemon"
+score: 0.9213602542877197
+x: 313
+y: 233
+w: 25
+h: 24, id: 5
+name: "coffee"
+score: 0.8577655553817749
+x: 431
+y: 155
+w: 74
+h: 98, id: 0
+name: "cheeze it"
+score: 0.6876306533813477
+x: 316
+y: 153
+w: 29
+h: 92, id: 2
+name: "chocolate jello"
+score: 0.6095243096351624
+x: 449
+y: 217
+w: 31
+h: 32]

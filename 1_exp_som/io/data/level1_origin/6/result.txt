@@ -1,0 +1,55 @@
+[id: 28
+name: "tennis ball"
+score: 0.9686217308044434
+x: 135
+y: 216
+w: 28
+h: 27, id: 13
+name: "lemon"
+score: 0.9284056425094604
+x: 120
+y: 319
+w: 27
+h: 29, id: 5
+name: "coffee"
+score: 0.9273604154586792
+x: 470
+y: 304
+w: 66
+h: 80, id: 32
+name: "rubiks cube"
+score: 0.9224833250045776
+x: 286
+y: 226
+w: 24
+h: 32, id: 10
+name: "banana"
+score: 0.9178962707519531
+x: 302
+y: 338
+w: 84
+h: 50, id: 11
+name: "strawberry"
+score: 0.7279752492904663
+x: 157
+y: 144
+w: 17
+h: 18, id: 9
+name: "tomato soup"
+score: 0.6959580183029175
+x: 288
+y: 138
+w: 25
+h: 43, id: 8
+name: "mustard"
+score: 0.5851011872291565
+x: 420
+y: 195
+w: 41
+h: 45, id: 0
+name: "cheeze it"
+score: 0.39793843030929565
+x: 401
+y: 120
+w: 33
+h: 88]

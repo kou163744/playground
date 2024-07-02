@@ -1,0 +1,49 @@
+[id: 5
+name: "coffee"
+score: 0.9785478711128235
+x: 288
+y: 160
+w: 38
+h: 61, id: 11
+name: "strawberry"
+score: 0.9367526173591614
+x: 148
+y: 218
+w: 22
+h: 16, id: 12
+name: "apple"
+score: 0.8902919292449951
+x: 381
+y: 172
+w: 24
+h: 27, id: 13
+name: "lemon"
+score: 0.806853175163269
+x: 391
+y: 216
+w: 21
+h: 23, id: 32
+name: "rubiks cube"
+score: 0.7943847179412842
+x: 281
+y: 212
+w: 24
+h: 22, id: 4
+name: "spam"
+score: 0.7905300855636597
+x: 179
+y: 148
+w: 21
+h: 54, id: 4
+name: "spam"
+score: 0.462958425283432
+x: 185
+y: 148
+w: 33
+h: 55, id: 18
+name: "cleanser"
+score: 0.34864580631256104
+x: 187
+y: 151
+w: 35
+h: 62]

@@ -1,0 +1,43 @@
+[id: 32
+name: "rubiks cube"
+score: 0.9651171565055847
+x: 407
+y: 213
+w: 26
+h: 31, id: 11
+name: "strawberry"
+score: 0.9309604167938232
+x: 158
+y: 211
+w: 22
+h: 16, id: 26
+name: "soft ball"
+score: 0.9105420708656311
+x: 170
+y: 168
+w: 34
+h: 35, id: 8
+name: "mustard"
+score: 0.8407841920852661
+x: 387
+y: 162
+w: 34
+h: 48, id: 11
+name: "strawberry"
+score: 0.7759448885917664
+x: 277
+y: 212
+w: 18
+h: 16, id: 4
+name: "spam"
+score: 0.710628867149353
+x: 285
+y: 168
+w: 35
+h: 34, id: 8
+name: "mustard"
+score: 0.32252585887908936
+x: 387
+y: 150
+w: 33
+h: 73]

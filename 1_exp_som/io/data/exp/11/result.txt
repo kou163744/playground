@@ -1,0 +1,79 @@
+[id: 28
+name: "tennis ball"
+score: 0.9801300764083862
+x: 164
+y: 347
+w: 33
+h: 32, id: 25
+name: "soccer ball"
+score: 0.9780504107475281
+x: 48
+y: 281
+w: 71
+h: 60, id: 12
+name: "apple"
+score: 0.9748224020004272
+x: 356
+y: 354
+w: 36
+h: 38, id: 32
+name: "rubiks cube"
+score: 0.9711291790008545
+x: 260
+y: 211
+w: 27
+h: 34, id: 7
+name: "pringles"
+score: 0.9615352749824524
+x: 474
+y: 286
+w: 60
+h: 101, id: 13
+name: "lemon"
+score: 0.9268327951431274
+x: 178
+y: 193
+w: 22
+h: 20, id: 5
+name: "coffee"
+score: 0.8311417698860168
+x: 93
+y: 197
+w: 58
+h: 62, id: 4
+name: "spam"
+score: 0.8128677606582642
+x: 207
+y: 261
+w: 45
+h: 39, id: 26
+name: "soft ball"
+score: 0.8092765808105469
+x: 338
+y: 81
+w: 28
+h: 27, id: 15
+name: "pear"
+score: 0.7634811401367188
+x: 279
+y: 351
+w: 32
+h: 35, id: 5
+name: "coffee"
+score: 0.5389832854270935
+x: 464
+y: 201
+w: 67
+h: 104, id: 32
+name: "rubiks cube"
+score: 0.474631130695343
+x: 274
+y: 153
+w: 23
+h: 31, id: 9
+name: "tomato soup"
+score: 0.3886178433895111
+x: 474
+y: 286
+w: 60
+h: 101]

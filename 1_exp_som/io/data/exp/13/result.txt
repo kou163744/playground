@@ -1,0 +1,61 @@
+[id: 29
+name: "racquet ball"
+score: 0.9416525363922119
+x: 434
+y: 200
+w: 19
+h: 18, id: 13
+name: "lemon"
+score: 0.8278263807296753
+x: 207
+y: 140
+w: 18
+h: 17, id: 17
+name: "plum"
+score: 0.806853175163269
+x: 462
+y: 295
+w: 22
+h: 22, id: 32
+name: "rubiks cube"
+score: 0.8056327104568481
+x: 299
+y: 201
+w: 23
+h: 31, id: 0
+name: "cheeze it"
+score: 0.7994424104690552
+x: 161
+y: 165
+w: 45
+h: 88, id: 4
+name: "spam"
+score: 0.7813307046890259
+x: 304
+y: 127
+w: 31
+h: 31, id: 14
+name: "peach"
+score: 0.7446573972702026
+x: 290
+y: 276
+w: 25
+h: 24, id: 5
+name: "coffee"
+score: 0.592666506767273
+x: 427
+y: 108
+w: 50
+h: 89, id: 7
+name: "pringles"
+score: 0.498046875
+x: 161
+y: 166
+w: 46
+h: 87, id: 27
+name: "base ball"
+score: 0.32595008611679077
+x: 152
+y: 288
+w: 34
+h: 32]

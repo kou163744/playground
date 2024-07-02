@@ -1,0 +1,55 @@
+[id: 28
+name: "tennis ball"
+score: 0.9810234308242798
+x: 106
+y: 343
+w: 34
+h: 30, id: 25
+name: "soccer ball"
+score: 0.9640500545501709
+x: 423
+y: 246
+w: 61
+h: 56, id: 32
+name: "rubiks cube"
+score: 0.9348751306533813
+x: 455
+y: 339
+w: 31
+h: 39, id: 15
+name: "pear"
+score: 0.8652229905128479
+x: 279
+y: 351
+w: 32
+h: 34, id: 9
+name: "tomato soup"
+score: 0.85584956407547
+x: 276
+y: 233
+w: 29
+h: 46, id: 5
+name: "coffee"
+score: 0.8333238959312439
+x: 402
+y: 137
+w: 53
+h: 94, id: 32
+name: "rubiks cube"
+score: 0.7759448885917664
+x: 167
+y: 169
+w: 24
+h: 32, id: 26
+name: "soft ball"
+score: 0.7520120739936829
+x: 274
+y: 163
+w: 34
+h: 33, id: 7
+name: "pringles"
+score: 0.525368869304657
+x: 128
+y: 216
+w: 59
+h: 97]

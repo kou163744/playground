@@ -1,0 +1,55 @@
+[id: 5
+name: "coffee"
+score: 0.9867762327194214
+x: 283
+y: 260
+w: 48
+h: 75, id: 7
+name: "pringles"
+score: 0.9817356467247009
+x: 202
+y: 227
+w: 38
+h: 101, id: 25
+name: "soccer ball"
+score: 0.9807302951812744
+x: 97
+y: 252
+w: 64
+h: 59, id: 14
+name: "peach"
+score: 0.9073100090026855
+x: 394
+y: 203
+w: 20
+h: 19, id: 12
+name: "apple"
+score: 0.8998310565948486
+x: 183
+y: 295
+w: 35
+h: 37, id: 7
+name: "pringles"
+score: 0.8499711751937866
+x: 396
+y: 159
+w: 27
+h: 82, id: 11
+name: "strawberry"
+score: 0.6774741411209106
+x: 167
+y: 157
+w: 16
+h: 16, id: 9
+name: "tomato soup"
+score: 0.5563995242118835
+x: 538
+y: 270
+w: 37
+h: 53, id: 7
+name: "pringles"
+score: 0.4493924081325531
+x: 184
+y: 107
+w: 30
+h: 82]

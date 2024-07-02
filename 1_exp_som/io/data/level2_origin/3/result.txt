@@ -1,0 +1,91 @@
+[id: 25
+name: "soccer ball"
+score: 0.9830838441848755
+x: 385
+y: 184
+w: 52
+h: 52, id: 0
+name: "cheeze it"
+score: 0.9810234308242798
+x: 158
+y: 188
+w: 45
+h: 107, id: 14
+name: "peach"
+score: 0.966914176940918
+x: 454
+y: 420
+w: 24
+h: 25, id: 5
+name: "coffee"
+score: 0.9621075391769409
+x: 196
+y: 174
+w: 45
+h: 63, id: 10
+name: "banana"
+score: 0.925230085849762
+x: 248
+y: 210
+w: 59
+h: 32, id: 13
+name: "lemon"
+score: 0.9073100090026855
+x: 363
+y: 227
+w: 23
+h: 22, id: 32
+name: "rubiks cube"
+score: 0.81640625
+x: 318
+y: 459
+w: 29
+h: 36, id: 22
+name: "spoon"
+score: 0.7690780162811279
+x: 490
+y: 231
+w: 31
+h: 42, id: 28
+name: "tennis ball"
+score: 0.7549138069152832
+x: 268
+y: 352
+w: 23
+h: 23, id: 11
+name: "strawberry"
+score: 0.7431692481040955
+x: 165
+y: 422
+w: 19
+h: 20, id: 32
+name: "rubiks cube"
+score: 0.590779185295105
+x: 411
+y: 219
+w: 22
+h: 37, id: 39
+name: "red wine"
+score: 0.5813032388687134
+x: 316
+y: 203
+w: 34
+h: 20, id: 15
+name: "pear"
+score: 0.5602525472640991
+x: 268
+y: 352
+w: 23
+h: 24, id: 9
+name: "tomato soup"
+score: 0.43782347440719604
+x: 366
+y: 409
+w: 30
+h: 50, id: 24
+name: "mug"
+score: 0.33807653188705444
+x: 366
+y: 409
+w: 29
+h: 50]

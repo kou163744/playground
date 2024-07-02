@@ -1,0 +1,31 @@
+[id: 25
+name: "soccer ball"
+score: 0.9679008722305298
+x: 198
+y: 182
+w: 62
+h: 60, id: 26
+name: "soft ball"
+score: 0.8925619125366211
+x: 361
+y: 285
+w: 46
+h: 47, id: 12
+name: "apple"
+score: 0.7826625108718872
+x: 193
+y: 306
+w: 36
+h: 39, id: 13
+name: "lemon"
+score: 0.7341197729110718
+x: 472
+y: 302
+w: 27
+h: 29, id: 6
+name: "tuna"
+score: 0.4035666584968567
+x: 325
+y: 148
+w: 36
+h: 50]

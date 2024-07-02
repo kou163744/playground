@@ -1,0 +1,61 @@
+[id: 14
+name: "peach"
+score: 0.9412226676940918
+x: 415
+y: 265
+w: 27
+h: 26, id: 10
+name: "banana"
+score: 0.9278846979141235
+x: 315
+y: 410
+w: 63
+h: 38, id: 7
+name: "pringles"
+score: 0.9136754274368286
+x: 204
+y: 92
+w: 37
+h: 115, id: 28
+name: "tennis ball"
+score: 0.9019226431846619
+x: 220
+y: 265
+w: 29
+h: 30, id: 17
+name: "plum"
+score: 0.8902919292449951
+x: 427
+y: 402
+w: 22
+h: 25, id: 1
+name: "sugar"
+score: 0.8902919292449951
+x: 316
+y: 110
+w: 49
+h: 85, id: 13
+name: "lemon"
+score: 0.8418275117874146
+x: 434
+y: 144
+w: 29
+h: 20, id: 5
+name: "coffee"
+score: 0.680878758430481
+x: 319
+y: 247
+w: 45
+h: 66, id: 4
+name: "spam"
+score: 0.6370307803153992
+x: 319
+y: 247
+w: 46
+h: 65, id: 32
+name: "rubiks cube"
+score: 0.49023550748825073
+x: 212
+y: 396
+w: 29
+h: 41]

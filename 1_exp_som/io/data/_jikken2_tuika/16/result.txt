@@ -1,0 +1,67 @@
+[id: 25
+name: "soccer ball"
+score: 0.9961152672767639
+x: 338
+y: 299
+w: 59
+h: 59, id: 4
+name: "spam"
+score: 0.9329444169998169
+x: 248
+y: 182
+w: 46
+h: 34, id: 7
+name: "pringles"
+score: 0.9284056425094604
+x: 257
+y: 261
+w: 30
+h: 75, id: 13
+name: "lemon"
+score: 0.8848353028297424
+x: 404
+y: 447
+w: 26
+h: 25, id: 8
+name: "mustard"
+score: 0.8568100929260254
+x: 252
+y: 411
+w: 43
+h: 86, id: 15
+name: "pear"
+score: 0.7592233419418335
+x: 324
+y: 440
+w: 36
+h: 31, id: 12
+name: "apple"
+score: 0.5983123779296875
+x: 245
+y: 317
+w: 29
+h: 28, id: 40
+name: "tropical juice"
+score: 0.39793843030929565
+x: 404
+y: 315
+w: 33
+h: 31, id: 2
+name: "chocolate jello"
+score: 0.32082176208496094
+x: 359
+y: 190
+w: 38
+h: 28, id: 4
+name: "spam"
+score: 0.30239152908325195
+x: 252
+y: 414
+w: 40
+h: 80, id: 7
+name: "pringles"
+score: 0.30074605345726013
+x: 364
+y: 134
+w: 34
+h: 80]

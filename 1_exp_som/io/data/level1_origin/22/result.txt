@@ -1,0 +1,37 @@
+[id: 7
+name: "pringles"
+score: 0.9339163899421692
+x: 130
+y: 144
+w: 40
+h: 85, id: 11
+name: "strawberry"
+score: 0.9309604167938232
+x: 305
+y: 219
+w: 19
+h: 19, id: 7
+name: "pringles"
+score: 0.9111766219139099
+x: 302
+y: 141
+w: 27
+h: 92, id: 27
+name: "base ball"
+score: 0.850963830947876
+x: 105
+y: 210
+w: 31
+h: 26, id: 12
+name: "apple"
+score: 0.46684539318084717
+x: 480
+y: 213
+w: 30
+h: 33, id: 0
+name: "cheeze it"
+score: 0.34687304496765137
+x: 130
+y: 144
+w: 40
+h: 85]

@@ -1,0 +1,73 @@
+[id: 15
+name: "pear"
+score: 0.9609540104866028
+x: 114
+y: 208
+w: 41
+h: 25, id: 14
+name: "peach"
+score: 0.9522185325622559
+x: 195
+y: 214
+w: 24
+h: 23, id: 11
+name: "strawberry"
+score: 0.9299484491348267
+x: 292
+y: 216
+w: 16
+h: 18, id: 0
+name: "cheeze it"
+score: 0.925230085849762
+x: 393
+y: 143
+w: 29
+h: 83, id: 14
+name: "peach"
+score: 0.9246891736984253
+x: 400
+y: 212
+w: 22
+h: 25, id: 5
+name: "coffee"
+score: 0.8679343461990356
+x: 485
+y: 160
+w: 44
+h: 59, id: 0
+name: "cheeze it"
+score: 0.8019360303878784
+x: 302
+y: 141
+w: 27
+h: 92, id: 7
+name: "pringles"
+score: 0.8006922006607056
+x: 216
+y: 140
+w: 31
+h: 88, id: 11
+name: "strawberry"
+score: 0.7446573972702026
+x: 505
+y: 218
+w: 18
+h: 18, id: 7
+name: "pringles"
+score: 0.6825742125511169
+x: 302
+y: 141
+w: 27
+h: 92, id: 8
+name: "mustard"
+score: 0.6388348937034607
+x: 139
+y: 144
+w: 35
+h: 62, id: 0
+name: "cheeze it"
+score: 0.3923368453979492
+x: 215
+y: 140
+w: 31
+h: 87]

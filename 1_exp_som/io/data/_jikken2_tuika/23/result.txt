@@ -1,0 +1,49 @@
+[id: 25
+name: "soccer ball"
+score: 0.9899859428405762
+x: 384
+y: 207
+w: 47
+h: 46, id: 14
+name: "peach"
+score: 0.9257676601409912
+x: 394
+y: 247
+w: 22
+h: 19, id: 14
+name: "peach"
+score: 0.8962537050247192
+x: 114
+y: 166
+w: 25
+h: 20, id: 29
+name: "racquet ball"
+score: 0.8774785399436951
+x: 50
+y: 163
+w: 23
+h: 21, id: 11
+name: "strawberry"
+score: 0.8140530586242676
+x: 276
+y: 247
+w: 16
+h: 16, id: 8
+name: "mustard"
+score: 0.8116765022277832
+x: 486
+y: 213
+w: 38
+h: 72, id: 2
+name: "chocolate jello"
+score: 0.6842647194862366
+x: 131
+y: 132
+w: 26
+h: 23, id: 7
+name: "pringles"
+score: 0.5331546068191528
+x: 282
+y: 189
+w: 26
+h: 80]
