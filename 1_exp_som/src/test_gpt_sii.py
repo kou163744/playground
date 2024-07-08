@@ -7,6 +7,13 @@ import sys
 import pandas as pd
 import logging
 import yaml
+import pathlib
+import textwrap
+import google.generativeai as genai
+# from google.colab import userdata
+# from IPython.display import display
+# from IPython.display import Markdown
+import PIL.Image
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -20,7 +27,7 @@ def encode_image(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
 
-def call_vlm(api_key=None, origin_image_path=None, marked_image_path=None, text=None):
+def call_openai(api_key=None, origin_image_path=None, marked_image_path=None, text=None):
 
     headers = {
         "Content-Type": "application/json",
@@ -91,7 +98,33 @@ def call_vlm(api_key=None, origin_image_path=None, marked_image_path=None, text=
     print(response.json()['choices'][0]['message']['content'])
     print("*"*50)
     return response.json()['choices'][0]['message']['content']
- 
+
+def call_gemini(api_key=None, origin_image_path=None, marked_image_path=None, text=None):
+
+    genai.configure(api_key=api_key)
+    model = genai.GenerativeModel('gemini-1.5-flash')
+    
+    if origin_image_path == None:
+        # Getting the base64 string
+        marked_img = PIL.Image.open(marked_image_path)
+        response = model.generate_content([
+            text, 
+            marked_img
+        ], stream=True)
+    else:
+        # Getting the base64 string
+        origin_img = PIL.Image.open(origin_image_path)
+        marked_img = PIL.Image.open(marked_image_path)
+        response = model.generate_content([
+            text, 
+            origin_img,
+            marked_img
+        ], stream=True)
+    response.resolve()
+    print("*"*50)
+    print(response.text)
+    print("*"*50)
+    return response.text
     
 def main(args: argparse.Namespace):
     with open('../io/data/SII/level2_sii.yaml', 'r') as file:
@@ -102,14 +135,20 @@ def main(args: argparse.Namespace):
     answer_columns = ['yolo_answer1', 'yolo_answer2', 'yolo_answer3', 'yolo_answer4']
     marked_image_path_base = '../io/data/SII/level2_results_sii'
     image_path_base = '../io/data/level2_image'
-    csv_path = '../io/results/level2_results_sii.csv'
+    csv_path = '../io/results/SII/level2_results_sii.csv'
     csv_data = pd.read_csv(csv_path)
     
-    if os.getenv("OPENAI_API") is None:
-        logging.error("OPENAI_API error")
+    # if os.getenv("OPENAI_API") is None:
+    #     logging.error("OPENAI_API error")
+    #     sys.exit()
+    # else:
+    #     openai_api_key = os.getenv("OPENAI_API")
+
+    if os.getenv("GEMINI_API") is None:
+        logging.error("GEMINI_API error")
         sys.exit()
     else:
-        api_key = os.getenv("OPENAI_API")
+        gemini_api_key = os.getenv("GEMINI_API")
 
     for col_q, col_an in zip(specific_columns, answer_columns):
         count = 0
@@ -135,10 +174,14 @@ def main(args: argparse.Namespace):
                 origin_mark_w_label = f"You are given the first image, the original image, and the second image, with each object marked. The labels are represented as numbers placed above the objects. Name of object corresponding to mark: {label} Your task is to identify the number based on a given instruction. Output only the number corresponding to the object that matches the instruction, with no additional text.\nInstruction: {order}\nNumber: "
                 
                 if isinstance(order, str):
-                    responce1 = call_vlm(api_key=api_key, origin_image_path=None, marked_image_path=marked_image_path, text=only_mark_wo_label)
-                    responce2 = call_vlm(api_key=api_key, origin_image_path=None, marked_image_path=marked_image_path, text=origin_mark_wo_label)
-                    responce3 = call_vlm(api_key=api_key, origin_image_path=origin_image_path, marked_image_path=marked_image_path, text=only_mark_w_label)
-                    responce4 = call_vlm(api_key=api_key, origin_image_path=origin_image_path, marked_image_path=marked_image_path, text=origin_mark_w_label)
+                    # responce1 = call_openai(api_key=openai_api_key, origin_image_path=None, marked_image_path=marked_image_path, text=only_mark_wo_label)
+                    # responce2 = call_openai(api_key=openai_api_key, origin_image_path=None, marked_image_path=marked_image_path, text=origin_mark_wo_label)
+                    # responce3 = call_openai(api_key=openai_api_key, origin_image_path=origin_image_path, marked_image_path=marked_image_path, text=only_mark_w_label)
+                    # responce4 = call_openai(api_key=opemai_api_key, origin_image_path=origin_image_path, marked_image_path=marked_image_path, text=origin_mark_w_label)
+                    responce1 = call_gemini(api_key=gemini_api_key, origin_image_path=None, marked_image_path=marked_image_path, text=only_mark_wo_label)
+                    responce2 = call_gemini(api_key=gemini_api_key, origin_image_path=None, marked_image_path=marked_image_path, text=origin_mark_wo_label)
+                    responce3 = call_gemini(api_key=gemini_api_key, origin_image_path=origin_image_path, marked_image_path=marked_image_path, text=only_mark_w_label)
+                    responce4 = call_gemini(api_key=gemini_api_key, origin_image_path=origin_image_path, marked_image_path=marked_image_path, text=origin_mark_w_label)
                     answer1.append(responce1)
                     if str(responce1) == str(graund_truth):
                         logging.info("correct1!!")
@@ -184,7 +227,7 @@ def main(args: argparse.Namespace):
                 answer_rate4.append(None)
             csv_data[f"{col_q}_ans_rate4"] = answer_rate4
 
-    csv_data.to_csv('../io/results/updated_level2_results_sii.csv')
+    csv_data.to_csv('../io/results/SII/updated_level2_results_gemini.csv')
 
 
 
