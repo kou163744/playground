@@ -6,6 +6,12 @@ import os
 import sys
 import pandas as pd
 import logging
+import time
+import google.generativeai as genai
+# from google.colab import userdata
+# from IPython.display import display
+# from IPython.display import Markdown
+import PIL.Image
     
 
 def parse_args():
@@ -20,7 +26,7 @@ def encode_image(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
 
-def call_vlm(api_key, origin_image_path, marked_image_path, order):
+def call_openai(api_key, origin_image_path, marked_image_path, order):
 
     # Getting the base64 string
     origin_base64_image = encode_image(origin_image_path)
@@ -34,8 +40,8 @@ def call_vlm(api_key, origin_image_path, marked_image_path, order):
     text_prompt = f"You are given the first image, the original image, and the second image, with each object marked. The labels are represented as numbers placed above the objects. Your task is to identify the number based on a given instruction. Output only the number corresponding to the object that matches the instruction, with no additional text.\nInstruction: {order}\nNumber: "
 
     payload = {
-        # "model": "gpt-4-vision-preview",
-        "model": "gpt-4o",
+        "model": "gpt-4-vision-preview",
+        # "model": "gpt-4o",
         "messages": [
           {
             "role": "user",
@@ -69,6 +75,36 @@ def call_vlm(api_key, origin_image_path, marked_image_path, order):
     print("*"*50)
     return response.json()['choices'][0]['message']['content']
     
+def call_gemini(api_key=None, origin_image_path=None, marked_image_path=None, order=None):
+    api_key = os.getenv("GEMINI_API")
+    genai.configure(api_key=api_key)
+    model = genai.GenerativeModel('gemini-1.5-pro-latest')
+
+    text_prompt = f"You are given the first image, the original image, and the second image, with each object marked. The labels are represented as numbers placed above the objects. Your task is to identify the number based on a given instruction. Output only the number corresponding to the object that matches the instruction, with no additional text.\nInstruction: {order}\nNumber: "
+    
+    if origin_image_path == None:
+        # Getting the base64 string
+        marked_img = PIL.Image.open(marked_image_path)
+        response = model.generate_content([
+            text_prompt, 
+            marked_img
+        ], stream=False)
+    else:
+        # Getting the base64 string
+        origin_img = PIL.Image.open(origin_image_path)
+        marked_img = PIL.Image.open(marked_image_path)
+        response = model.generate_content([
+            text_prompt, 
+            origin_img,
+            marked_img
+        ], stream=False)
+    response.resolve()
+    print("*"*50)
+    print(response.text)
+    print("*"*50)
+    time.sleep(25)
+    return response.text  
+
 def main(args: argparse.Namespace):
     logging.basicConfig(level=logging.DEBUG)
     specific_columns = ['absolute_position_1', 'absolute_position_2', 'relative_position_1', 'relative_position_2']
@@ -96,7 +132,8 @@ def main(args: argparse.Namespace):
                 origin_image_path = os.path.join(origin_image_path_base, f"rgb_input{count}.jpg")
                 # image_path = os.path.join(image_path_base, f"image{count}.png") # for som
                 if isinstance(order, str):
-                    responce = call_vlm(api_key, origin_image_path, marked_image_path, order)
+                    responce = call_openai(api_key, origin_image_path, marked_image_path, order)
+                    # responce = call_gemini(api_key, origin_image_path, marked_image_path, order)
                     answer.append(responce)
                     if str(responce) == str(graund_truth):
                         logging.info("correct!!")
@@ -111,7 +148,7 @@ def main(args: argparse.Namespace):
                 answer_rate.append(None)
             csv_data[f"{col_q}_ans_rate1"] = answer_rate
 
-    csv_data.to_csv('../io/results/updated_level1_results_som.csv')
+    csv_data.to_csv('../io/results/SII/updated_level1_results_som_4v.csv')
 
 
 
