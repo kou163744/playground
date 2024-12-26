@@ -1,0 +1,146 @@
+,Unnamed: 0,level2,absolute_position_1,absolute_position_2,relative_position_1,relative_position_2,yolo_answer1,yolo_answer2,yolo_answer3,yolo_answer4,som_answer1,som_answer2,som_answer3,som_answer4,absolute_position_1_ans1,absolute_position_1_ans_rate1,absolute_position_1_ans2,absolute_position_1_ans_rate2,absolute_position_1_ans3,absolute_position_1_ans_rate3,absolute_position_1_ans4,absolute_position_1_ans_rate4,absolute_position_2_ans1,absolute_position_2_ans_rate1,absolute_position_2_ans2,absolute_position_2_ans_rate2,absolute_position_2_ans3,absolute_position_2_ans_rate3,absolute_position_2_ans4,absolute_position_2_ans_rate4,relative_position_1_ans1,relative_position_1_ans_rate1,relative_position_1_ans2,relative_position_1_ans_rate2,relative_position_1_ans3,relative_position_1_ans_rate3,relative_position_1_ans4,relative_position_1_ans_rate4,relative_position_2_ans1,relative_position_2_ans_rate1,relative_position_2_ans2,relative_position_2_ans_rate2,relative_position_2_ans3,relative_position_2_ans_rate3,relative_position_2_ans4,relative_position_2_ans_rate4
+0,0,image1,The left-most object on the floor.,The right-most fruit on the floor.,The object behind the lemon on the desk,The object at the right of the pringles on the desk.,8,9,2,1,~,~,16,8,"3
+",18,,,,,,,"6
+",16,,,,,,,"16
+",13,,,,,,,"8
+",10,,,,,,
+1,1,image2,The right-most food on the desk.,The left-most object under the desk.,The object behind the rubics_cube on the desk,The object at the left of the apple on the floor,1,6,5,6,12,~,17,~,"12
+",0.0,,,,,,,"4
+",0.0,,,,,,,"13
+",0.0,,,,,,,"4
+",0.0,,,,,,
+2,2,image3,The right-most fruit on the desk.,The ball under the desk.,The object behind the pringles on the desk,The object behind the lemon on the table.,10,8,2,3,~,16,10,9,"15
+",,,,,,,,"16
+",,,,,,,,"10
+",,,,,,,,"18
+",,,,,,,
+3,3,image4,The right-most object on the top shelf.,The center object on the middle shelf.,The object at the left of the pitcher on the bottom shelf.,The fruit above the tomato can on the bottom shelf.,2,7,3,8,7,11,6,6,"7
+",,,,,,,,"4
+",,,,,,,,"6
+",,,,,,,,"11
+",,,,,,,
+4,4,image5,The left-most object on the bottom shelf.,The center object on the top shelf.,The object at the right of the banana.,The object above the coffee can on the top shelf.,6,2,8,2,~,7,~,7,"5
+",,,,,,,,"7
+",,,,,,,,"3
+",,,,,,,,"7
+",,,,,,,
+5,5,image6,The right-most object on the top shelf.,The right-most fruit on the bottom shelf.,The object behind the banana on the bottom shelf.,The object behind the tennis ball on the middle shelf.,1,3,2,5,5,11,6,9,"5
+",,,,,,,,"11
+",,,,,,,,"6
+",,,,,,,,"9
+",,,,,,,
+6,6,image7,The left-most object on the middle shelf.,The left-most fruit on the middle shelf.,The object behind the mustard on the top shelf.,The object on the rubics cube on the bottom shelf.,6,6,9,3,13,13,10,9,"13
+",,,,,,,,"13
+",,,,,,,,"10
+",,,,,,,,"11
+",,,,,,,
+7,7,image8,The right-most object on the top shelf.,The left-most ball on the middle shelf.,The ball on the spam on the bottom shelf.,The fruit on the rubics cube on the bottom shelf.,4,10,3,6,6,12,8,9,"6
+",,,,,,,,"12
+",,,,,,,,"8
+",,,,,,,,"9
+",,,,,,,
+8,8,image9,The right-most object on the top shelf.,The right-most ball on the top shelf.,The object behind the pear on the top shelf.,The object at the right of the tomato soup can on the middle shelf.,9,9,5,6,~,~,9,1,"3
+",,,,,,,,"3
+",,,,,,,,"7
+",,,,,,,,"11
+",,,,,,,
+9,9,image10,The left-most object on the bottom stair.,The left-most ball on the middle stair.,The object at the right of the pringles on the top stair.,The object at the right of the soccer ball on the bottom stair.,2,5,4,6,13,12,16,~,"13
+",,,,,,,,"15
+",,,,,,,,"16
+",,,,,,,,"4
+",,,,,,,
+10,10,image11,The left-most ball on the bottom stair.,The left-most fruit on the bottom stair.,The object behind the peach on the bottom stair.,The object behind the rubics cube  on the top stair.,4,7,4,2,18,~,16,10,"18
+",,,,,,,,"18
+",,,,,,,,"11
+",,,,,,,,"16
+",,,,,,,
+11,11,image12,The left-most fruit on the bottom stair.,The right-most fruit on the top stair.,The object in front of pringles on the top shelf.,The object behind the apple on the bottom stair.,5,4,4,7,16,12,12,17,"16
+",,,,,,,,"12
+",,,,,,,,"12
+",,,,,,,,"17
+",,,,,,,
+12,12,image13,The left-most fruit on the bottom stair.,The right-most fruit on the top stair.,The object in front of pringles on the middle shelf.,The object in front of pringles on the bottom shelf.,5,4,3,5,~,~,~,~,"6
+",,,,,,,,"3
+",,,,,,,,"8
+",,,,,,,,"11
+",,,,,,,
+13,13,image14,The ball on the middle shelf.,The right-most ball on the top stair.,The object behind the lemon on the bottom stair.,The object in front of soccer ball on the middle stair.,1,4,9,5,12,17,15,~,"12
+",,,,,,,,"17
+",,,,,,,,"7
+",,,,,,,,"7
+",,,,,,,
+14,14,image15,The left-most object on the top shelf.,The left-most object on the middle shelf.,The object at the right of the mustard on the top shelf.,The object at the right of the coffee can on the bottom shelf.,9,8,6,7,16,15,14,~,"16
+",,,,,,,,"15
+",,,,,,,,"3
+",,,,,,,,"6
+",,,,,,,
+15,15,image16,The left-most object on the top shelf.,The right-most object on the bottom shelf.,The object behind the apple on the middle shelf.,The object at the right of the pear on the bottom shelf.,3,9,6,9,13,17,12,17,"13
+",,,,,,,,"17
+",,,,,,,,"6
+",,,,,,,,"17
+",,,,,,,
+16,16,image17,The left-most object on the top shelf.,The right-most object on the top shelf.,The object behind the lemon on the middle shelf.,The object behind the rubics cube on the middle shelf.,2,7,4,3,13,~,11,12,"13
+",,,,,,,,"3
+",,,,,,,,"11
+",,,,,,,,"11
+",,,,,,,
+17,17,image18,The left-most object on the bottom shelf.,The right-most object on the bottom shelf.,The object behind the peach on the middle shelf.,The object behind the peach on the top shelf.,3,7,2,4,11,13,10,8,"11
+",,,,,,,,"13
+",,,,,,,,"10
+",,,,,,,,"1
+",,,,,,,
+18,18,image19,The left-most object on the top shelf.,The right-most object on the top shelf.,The object behind the strawberry on the middle shelf.,The object behind the strawberry on the bottom shelf.,3,4,2,6,15,14,12,13,"15
+",,,,,,,,"3
+",,,,,,,,"11
+",,,,,,,,"13
+",,,,,,,
+19,19,image20,The left-most object on the tall table.,The right-most object on the long table.,The object at the right of the apple on the long table.,The object at the right of the pear on the tall table.,7,5,5,4,~,18,18,17,"16
+",,,,,,,,"6
+",,,,,,,,"6
+",,,,,,,,"18
+",,,,,,,
+20,20,image21,The right-most object on the tall table.,The right-most object on the long table.,The object behind the apple on the long table.,The object behind the base ball on the long table.,5,4,2,1,15,16,14,13,"16
+",,,,,,,,"16
+",,,,,,,,"13
+",,,,,,,,"13
+",,,,,,,
+21,21,image22,The left-most object on the tall table.,The right-most object on the long table.,The object behind the strawberry on the long table.,The object behind the strawberry on the tall table.,4,2,1,2,13,~,12,10,"13
+",,,,,,,,"8
+",,,,,,,,"12
+",,,,,,,,"12
+",,,,,,,
+22,22,image23,The left-most object on the tall table.,The right-most object on the long table.,The object behind the peach on the long table.,The object behind the peach on the tall table.,5,1,3,8,16,10,13,14,"16
+",,,,,,,,"10
+",,,,,,,,"12
+",,,,,,,,"12
+",,,,,,,
+23,23,image24,The left-most object on the tall table.,The left-most fruit on the long table.,The object behind the peach on the long table.,The object behind the apple on the long table.,8,7,1,3,17,~,16,15,"11
+",,,,,,,,"15
+",,,,,,,,"13
+",,,,,,,,"13
+",,,,,,,
+24,24,image25,The right-most object on the long table.,The left-most object on the long table.,The object behind the peach on the chair.,The object at the left of the apple on the long table.,4,1,5,1,~,11,15,11,"14
+",,,,,,,,"11
+",,,,,,,,"15
+",,,,,,,,"16
+",,,,,,,
+25,25,image26,The left-most object on the long table.,The right-most object on the long table.,The object behind the peach on the chair.,The object in front of the pringles on the chair.,4,8,6,9,15,19,18,~,"15
+",,,,,,,,"19
+",,,,,,,,"18
+",,,,,,,,"10
+",,,,,,,
+26,26,image27,The left-most object on the long table.,The right-most object on the long table.,The object behind the lemon on the tall table.,The object in front of the pringles on the long table.,7,4,5,7,14,13,16,~,"17
+",,,,,,,,"13
+",,,,,,,,"14
+",,,,,,,,"18
+",,,,,,,
+27,27,image28,The left-most object on the long table.,The right-most object on the long table.,The object behind the peach on the tall table.,The object behind the peach on the chair.,6,5,4,11,~,17,16,19,"120
+",,,,,,,,"17
+",,,,,,,,"19
+",,,,,,,,"19
+",,,,,,,
+28,28,image29,The left-most fruit on the long table.,The right-most fruit on the long table.,The object behind the strawberry on the tall table.,The object behind the strawberry on the chair.,8,7,4,9,17,~,13,16,"17
+",,,,,,,,"14
+",,,,,,,,"16
+",,,,,,,,"9
+",,,,,,,

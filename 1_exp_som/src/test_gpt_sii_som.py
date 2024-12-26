@@ -78,7 +78,8 @@ def call_openai(api_key, origin_image_path, marked_image_path, order):
 def call_gemini(api_key=None, origin_image_path=None, marked_image_path=None, order=None):
     api_key = os.getenv("GEMINI_API")
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-1.5-pro-latest')
+    # model = genai.GenerativeModel('gemini-1.5-pro-latest')
+    model = genai.GenerativeModel('gemini-1.5-flash-latest')
 
     text_prompt = f"You are given the first image, the original image, and the second image, with each object marked. The labels are represented as numbers placed above the objects. Your task is to identify the number based on a given instruction. Output only the number corresponding to the object that matches the instruction, with no additional text.\nInstruction: {order}\nNumber: "
     
@@ -132,10 +133,10 @@ def main(args: argparse.Namespace):
                 origin_image_path = os.path.join(origin_image_path_base, f"rgb_input{count}.jpg")
                 # image_path = os.path.join(image_path_base, f"image{count}.png") # for som
                 if isinstance(order, str):
-                    responce = call_openai(api_key, origin_image_path, marked_image_path, order)
-                    # responce = call_gemini(api_key, origin_image_path, marked_image_path, order)
+                    # responce = call_openai(api_key, origin_image_path, marked_image_path, order)
+                    responce = call_gemini(api_key, origin_image_path, marked_image_path, order)
                     answer.append(responce)
-                    if str(responce) == str(graund_truth):
+                    if str(graund_truth) in str(responce):
                         logging.info("correct!!")
                         correct_count += 1
                     else:
@@ -148,7 +149,7 @@ def main(args: argparse.Namespace):
                 answer_rate.append(None)
             csv_data[f"{col_q}_ans_rate1"] = answer_rate
 
-    csv_data.to_csv('../io/results/SII/updated_level1_results_som_4v.csv')
+    csv_data.to_csv('../io/results/SII/updated_level1_results_som_gemini_flash.csv')
 
 
 

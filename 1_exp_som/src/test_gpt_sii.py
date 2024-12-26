@@ -104,7 +104,8 @@ def call_gemini(api_key=None, origin_image_path=None, marked_image_path=None, te
 
     genai.configure(api_key=api_key)
     # model = genai.GenerativeModel('gemini-1.5-pro-latest')
-    model = genai.GenerativeModel('gemini-pro-vision')
+    model = genai.GenerativeModel('gemini-1.5-flash-latest')
+    # model = genai.GenerativeModel('gemini-1.0-pro-latest')
     
     if origin_image_path == None:
         # Getting the base64 string
@@ -130,28 +131,28 @@ def call_gemini(api_key=None, origin_image_path=None, marked_image_path=None, te
     return response.text
     
 def main(args: argparse.Namespace):
-    with open('../io/data/SII/level2_sii.yaml', 'r') as file:
+    with open('../io/data/SII/level1_sii.yaml', 'r') as file:
         label_list = yaml.safe_load(file)
     logging.basicConfig(level=logging.DEBUG)
     specific_columns = ['absolute_position_1', 'absolute_position_2', 'relative_position_1', 'relative_position_2']
     # answer_columns = ['som_answer1', 'som_answer2', 'som_answer3', 'som_answer4']
     answer_columns = ['yolo_answer1', 'yolo_answer2', 'yolo_answer3', 'yolo_answer4']
-    marked_image_path_base = '../io/data/SII/level2_results_sii'
-    image_path_base = '../io/data/level2_image'
-    csv_path = '../io/results/SII/level2_results_sii.csv'
+    marked_image_path_base = '../io/data/SII/level1_results_sii'
+    image_path_base = '../io/data/level1_image'
+    csv_path = '../io/results/SII/level1_results_sii.csv'
     csv_data = pd.read_csv(csv_path)
     
-    if os.getenv("OPENAI_API") is None:
-        logging.error("OPENAI_API error")
-        sys.exit()
-    else:
-        openai_api_key = os.getenv("OPENAI_API")
-
-    # if os.getenv("GEMINI_API") is None:
-    #     logging.error("GEMINI_API error")
+    # if os.getenv("OPENAI_API") is None:
+    #     logging.error("OPENAI_API error")
     #     sys.exit()
     # else:
-    #     gemini_api_key = os.getenv("GEMINI_API")
+    #     openai_api_key = os.getenv("OPENAI_API")
+
+    if os.getenv("GEMINI_API") is None:
+        logging.error("GEMINI_API error")
+        sys.exit()
+    else:
+        gemini_api_key = os.getenv("GEMINI_API")
 
     for col_q, col_an in zip(specific_columns, answer_columns):
         count = 0
@@ -177,14 +178,14 @@ def main(args: argparse.Namespace):
                 origin_mark_w_label = f"You are given the first image, the original image, and the second image, with each object marked. The labels are represented as numbers placed above the objects. Name of object corresponding to mark: {label} Your task is to identify the number based on a given instruction. Output only the number corresponding to the object that matches the instruction, with no additional text.\nInstruction: {order}\nNumber: "
                 
                 if isinstance(order, str):
-                    responce1 = call_openai(api_key=openai_api_key, origin_image_path=None, marked_image_path=marked_image_path, text=only_mark_wo_label)
-                    responce2 = call_openai(api_key=openai_api_key, origin_image_path=None, marked_image_path=marked_image_path, text=origin_mark_wo_label)
-                    responce3 = call_openai(api_key=openai_api_key, origin_image_path=origin_image_path, marked_image_path=marked_image_path, text=only_mark_w_label)
-                    responce4 = call_openai(api_key=openai_api_key, origin_image_path=origin_image_path, marked_image_path=marked_image_path, text=origin_mark_w_label)
-                    # responce1 = call_gemini(api_key=gemini_api_key, origin_image_path=None, marked_image_path=marked_image_path, text=only_mark_wo_label)
-                    # responce2 = call_gemini(api_key=gemini_api_key, origin_image_path=None, marked_image_path=marked_image_path, text=origin_mark_wo_label)
-                    # responce3 = call_gemini(api_key=gemini_api_key, origin_image_path=origin_image_path, marked_image_path=marked_image_path, text=only_mark_w_label)
-                    # responce4 = call_gemini(api_key=gemini_api_key, origin_image_path=origin_image_path, marked_image_path=marked_image_path, text=origin_mark_w_label)
+                    # responce1 = call_openai(api_key=openai_api_key, origin_image_path=None, marked_image_path=marked_image_path, text=only_mark_wo_label)
+                    # responce2 = call_openai(api_key=openai_api_key, origin_image_path=None, marked_image_path=marked_image_path, text=origin_mark_wo_label)
+                    # responce3 = call_openai(api_key=openai_api_key, origin_image_path=origin_image_path, marked_image_path=marked_image_path, text=only_mark_w_label)
+                    # responce4 = call_openai(api_key=openai_api_key, origin_image_path=origin_image_path, marked_image_path=marked_image_path, text=origin_mark_w_label)
+                    responce1 = call_gemini(api_key=gemini_api_key, origin_image_path=None, marked_image_path=marked_image_path, text=only_mark_wo_label)
+                    responce2 = call_gemini(api_key=gemini_api_key, origin_image_path=None, marked_image_path=marked_image_path, text=origin_mark_wo_label)
+                    responce3 = call_gemini(api_key=gemini_api_key, origin_image_path=origin_image_path, marked_image_path=marked_image_path, text=only_mark_w_label)
+                    responce4 = call_gemini(api_key=gemini_api_key, origin_image_path=origin_image_path, marked_image_path=marked_image_path, text=origin_mark_w_label)
                     answer1.append(responce1)
                     if str(graund_truth) in str(responce1):
                         logging.info("correct1!!")
@@ -230,7 +231,7 @@ def main(args: argparse.Namespace):
                 answer_rate4.append(None)
             csv_data[f"{col_q}_ans_rate4"] = answer_rate4
 
-    csv_data.to_csv('../io/results/SII/updated_level2_results_gpt_4v.csv')
+    csv_data.to_csv('../io/results/SII/updated_level1_results_gemini_flash.csv')
 
 
 
